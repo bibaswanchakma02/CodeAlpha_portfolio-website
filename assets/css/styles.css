@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+:root{
+    --main-color: #5F9DF7;
+    --bg-color:#fff; 
+    --text-color: #000;
+
+
+}
+li{
+    list-style: none;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+a{
+    text-decoration: none;
+}
+/* HEADER */
+.container{
+    max-width: 100%;
+    margin: auto;
+    width: 100%;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+/* .navbar-contents{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+} */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 ;
+
+}
+#nav-bar.sticky{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-right: 100%;
+    transition: 0.3s;
+}
+.nav-link{
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-right: 17vw;
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--main-color);
+    padding-left: 10.6vw;
+}
+.nav-link{
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    color: var(--text-color);
+    
+}
+.nav-link:hover{
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    transition: 0.2s all linear;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.mobile-nav{
+    position: absolute;
+    display: block;
+    position: fixed;
+    top: 11%;
+    left: 100%;
+    width: 60%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: var(--main-color);
+    opacity: 87%;
+    padding-top: 74px;
+    transition: 0.4s;
+}
+.mobile-nav.active{
+    left: 40%;
+}
+.mobile-nav a{
+    
+    display: block;
+    width: 100;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: var(--main-color);
+
+}
+.mobile-nav a:hover{
+    background-color: #89b4f5;
+}
+.bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+    
+}
+/* ABOUT */
+.about-container{
+    display: flex;
+    padding-top: 230px;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-fit: center;
+    object-position: center;
+    
+}
+.left-intro{
+    margin: 50px;
+}
+.img{
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    border-radius: 50px;
+    border-color: #5F9DF7;
+    padding-bottom: 30px;
+    
+}
+.img img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #A8A8A8;
+    box-shadow: #ccc;
+}
+.hello{
+    background-color: var(--main-color);
+    size: 30px;
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    display: block;
+    
+}
+#hello-text{
+    color: var(--bg-color);
+}
+h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+#email{
+    color: var(--text-color);
+}
+.bx{
+    padding: 15px 15px 15px 0;
+    display: flex;
+    color: var(--text-color);
+}
+.social{
+    padding: 30px;
+    size: 5rem;
+}
+
+/* ABOUT_DETAILS */
+.about-details{
+    size: 2rem;
+}
+.about-details .intro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+}
+.about-details .intro-container .about-image img{
+    position: relative;
+    width: 15rem;
+    display: flex;
+    align-items: right;
+    margin-left: 6rem;
+}
+.about-image{
+    width: 30rem;
+    align-items: right;
+    justify-content: right;
+}
+.about-me-section{
+    size-adjust: 50%;
+    width: 50%;
+    margin-right: 5rem;
+    size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.about-me-section h1{
+    font-size: 2.2em;
+}
+#download-cv{
+    text-decoration: none;
+    padding: 16px 35px;
+    margin-top: 30px;
+    background-color: var(--main-color);
+    width: 216px;
+    border-radius: 14px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    
+}
+#download-cv a{
+    color: var(--bg-color);
+    font-weight: 300;
+}
+
+/* EDUCATION SECTION */
+.edu-container{
+    width: 100%;
+    padding: 35px 10%;
+}
+.edu-container .edu-header{
+    padding: 0px 0px 20px 30px;
+}
+.edu-container .edu-header h1{
+    font-size: 2.2em;
+    display: relative;
+    align-self: center;
+    
+}
+.edu-container .edu-contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+.edu-container .edu-contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.edu-container .edu-contents .box:hover{
+    box-shadow: 0px 3px 10px 0px #ccc;
+    border: 1px solid transparent;
+}
+.edu-container .edu-contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: var(--main-color);
+    border: 2px solid white;
+
+}
+.box h4{
+    position: relative;
+    color: var(--text-color);
+}
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    color: #444;
+}
+
+/* SKILLS SECTION */
+
+.mh-skills .mh-professional-skill{
+    padding-right: 60px;
+    color: var(--text-color);
+}
+
+.mh-skills .mh-professional-skill h2{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    
+}
+.mh-professional-skills{
+    padding-left: 20%;
+
+}
+
+.mh-professional-skills h2{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    padding-right: 2rem;
+}
+
+.mh-professional-progress li{
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.mh-progress{
+    margin-bottom: 10px;
+    font: 900 1.14/1;
+    color: var(--text-color);
+}
+
+
+/* ALTERNATE CSS */
+@media (max-width: 800px ) {
+    .about-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 800px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        align-items: center;
+        margin: auto 2.5rem;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 2rem;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+    .nav-link{
+        margin: 16px 0;
+    }
+
+    .navbar.active{
+        left: 0;
+    }
+}
+@media (max-width: 800px) {
+    .intro-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-section{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2.5rem;
+        width: 70%;   
+        margin-right: 3rem;
+    }
+    #download-cv{
+        position: relative;
+        left: 18vw;
+    }
+    .about-me-section h1{
+        margin-left: 0.6rem;
+    }
+    #para{
+        margin-left: 1.6rem;
+    }
+    .about-image{
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

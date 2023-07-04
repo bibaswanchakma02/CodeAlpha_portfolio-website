@@ -490,7 +490,7 @@ h1{
     color: white;
     text-align: center;
 }
-.box{
+.portfolio-box{
     background-size: cover;
     background-position: top;
     color: white;
@@ -500,8 +500,9 @@ h1{
     background-color: #222;
     background-blend-mode: hard-light;
     transition:all 0.3s ease-in-out;
+    grid-row: span 2/auto;
 }
-.box:hover{
+.portfolio-box:hover{
     background-color:#999;
     background-position: center;
     box-shadow: 0 0 4px #fff;
@@ -582,6 +583,23 @@ h1{
         display:flex;
         flex-direction: column;
     }
+    .portfolio-container{
+        flex-direction: column;
+        padding-block: 20px;
+    }
+    .gallery{
+        width: 100%;
+        padding-inline: 12px;
+        grid-auto-rows: 250px;
+    }
     
     
+}
+
+/* Portfolio section responsive */
+@media (max-width: 660px){
+    .portfolio-box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
 }

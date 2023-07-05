@@ -508,7 +508,74 @@ h1{
     box-shadow: 0 0 4px #fff;
 }
 
+/* CONTACT SECTION */
+.section-title{
+    font-size: 3.2em;
+    place-items: center;
+    text-align: center;
+}
+    
 
+.contact{
+    background-color: rgba(0, 0, 0, 0.082);
+}
+.contact-container{
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form,
+.contact-group{
+    width: 65%;
+    display: grid;
+    row-gap: 1rem;
+    margin: auto;
+    
+}
+.contact-form{
+    border: 0px;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.contact-form{
+    position: relative;
+}
+.contact-input{
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.contact-input::placeholder{
+    color: var(--text-color);
+}
+
+.contact-form textarea{
+    width: 65%;
+    height: 11rem;
+    resize: none;
+    margin-bottom: 2rem;
+    margin: auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.contact-button{
+    justify-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 16px 35px;
+    margin-top: 30px;
+    background-color: var(--main-color);
+    width: 216px;
+    border-radius: 14px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+.send-message{
+    color: var(--bg-color);
+}
 /* ALTERNATE CSS */
 @media (max-width: 800px ) {
     .about-container{
@@ -590,7 +657,7 @@ h1{
     .gallery{
         width: 100%;
         padding-inline: 12px;
-        grid-auto-rows: 250px;
+        grid-auto-rows: 220px;
     }
     
     

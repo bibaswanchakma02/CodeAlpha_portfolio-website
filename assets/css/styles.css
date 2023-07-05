@@ -526,7 +526,7 @@ h1{
 }
 .contact-form,
 .contact-group{
-    width: 65%;
+    width: 50%;
     display: grid;
     row-gap: 1rem;
     margin: auto;
@@ -552,9 +552,8 @@ h1{
 }
 
 .contact-form textarea{
-    width: 65%;
-    height: 11rem;
-    resize: none;
+    width: 50%;
+    height: 9rem;
     margin-bottom: 2rem;
     margin: auto;
     background-color: var(--bg-color);

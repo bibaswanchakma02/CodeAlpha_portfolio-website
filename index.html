@@ -230,10 +230,11 @@
         </div>
 
         <div class="contact-container containerContact grid">
-            <form action="" class="contact-form" id="contactFform">
+            <form action="https://api.web3forms.com/submit" class="contact-form" id="contactFform" method="POST">
                 <div class="contact-group">
-                <input type="text" name="user_name" required placeholder="Enter your name" class="contact-input">
-                <input type="email" name="user_email" required placeholder="Enter your email" class="contact-input">
+                <input type="hidden" name="access_key" value="75608b19-14a7-4cbd-9f8a-69e2f8764b89">
+                <input type="text" name="name" required placeholder="Enter your name" class="contact-input">
+                <input type="email" name="email" required placeholder="Enter your email" class="contact-input">
                 </div>
 
                 <textarea name="user_project" required placeholder="Enter your message" class="contact-input"></textarea>

@@ -447,8 +447,16 @@ h1{
     }
 }
 .skill_bar .bar .express{
-    width: 65%;
+    width: 45%;
     animation: express 2s;
+}
+
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 45%;
+    }
 }
 
 .skill_bar .bar .mongo{
